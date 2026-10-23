@@ -1,0 +1,23 @@
+My program in Python for: finding the location of the value x in a sequence of integers being intered by the user.(Linear Search)
+
+n = input("Enter the number of values: ")
+n = int(n)
+values = []
+for i in range(1,n+1):
+    value = input(" Enter the value number "+str(i)+":  ")
+    value = int(value)
+    values.append(value)
+
+print(" Your sequense is: "+str(values)+".")
+
+x = input("Enter the value of x: ")
+x = int(x)
+
+i = 0
+while ( i< n and x != values[i]):
+	i += 1
+if i < n:
+	location = i + 1
+	print(" The location of x is "+str(location)+".")
+else:
+    print(" The value x does not exist in the sequence.")
